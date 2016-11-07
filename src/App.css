@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Menu {
+  margin: 0;
+  list-style-type: none;
+  list-style-position: outside;
+  border-bottom: 1px solid #ccc;
+}
+
+.MenuItem {
+  display: inline-block;
+  position: relative;
+  width: 10em;
+  text-align: center;
+  padding: 1em 0 0;
+  cursor: pointer;
+}
+
+.MenuItem-text {
+  display: inline-block;
+  padding-bottom: 1em;
+}
+
+.SubMenu {
+  position: absolute;
+  width: 10em;
+  padding: 1em 2em;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.SubMenu-enter {
+  opacity: 0.01;
+}
+
+.SubMenu-enter.SubMenu-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.SubMenu-leave {
+  opacity: 1;
+}
+
+.SubMenu-leave.SubMenu-leave-active {
+  opacity: 0.01;
+  transition: opacity 200ms ease-in;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
